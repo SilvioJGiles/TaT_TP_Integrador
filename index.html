@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermercado Online</title>
+  <link rel="stylesheet" href="static/css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navegación -->
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#reseñas">Reseñas</a></li>
+    </ul>
+    <div class="logo">
+      <img src="static/imagenes/logoTat.jpg" alt="Logo del supermercado">
+    </div>
+  </nav>
+
+  <!-- Sección de inicio -->
+  <section id="inicio">
+    <div style="text-align: center; padding: 100px 20px;">
+      <h1>Bienvenidos a Nuestro Supermercado Online</h1>
+      <h2>¡Compra tus productos favoritos desde la comodidad de tu hogar!</h2>
+    </div>
+  </section>
+
+  <!-- Sección de productos -->
+  <section id="productos" class="productos">
+    <div class="producto-card">
+      <img src="static/imagenes/carnes.jpg" alt="Carnes">
+      <h3>Carnes</h3>
+      <p>Deliciosas y frescas carnes de la mejor calidad.</p>
+    </div>
+    <div class="producto-card">
+      <img src="static/imagenes/panes.jpg" alt="Panificados">
+      <h3>Panificados</h3>
+      <p>Pan recién horneado, panes especiales y más.</p>
+    </div>
+    <div class="producto-card">
+      <img src="static/imagenes/lacteos.jpg" alt="Lácteos">
+      <h3>Lácteos</h3>
+      <p>Leche, quesos, yogures, y todo lo relacionado con lácteos.</p>
+    </div>
+    <div class="producto-card">
+      <img src="static/imagenes/limpieza.jpg" alt="Limpieza">
+      <h3>Limpieza</h3>
+      <p>Productos para mantener tu hogar limpio y ordenado.</p>
+    </div>
+    <div class="producto-card">
+      <img src="static/imagenes/verduras.jpg" alt="Verdulería">
+      <h3>Verdulería</h3>
+      <p>Frutas y verduras frescas, directamente de la huerta.</p>
+    </div>
+    <div class="producto-card">
+      <img src="static/imagenes/bebidas.jpg"" alt="Bebidas">
+      <h3>Bebidas</h3>
+      <p>Jugos, gaseosas, agua, y más para refrescarte.</p>
+    </div>
+  </section>
+
+  <!-- Sección de reseñas -->
+  <section id="reseñas" class="reseñas">
+    <div class="reseña">
+      <h3>Gabriela</h3>
+      <p>Excelente servicio y productos de buena calidad. ¡Muy recomendado!</p>
+    </div>
+    <div class="reseña">
+      <h3>Jorge</h3>
+      <p>La entrega fue rápida y todo llegó en perfecto estado. ¡Muy satisfecha!</p>
+    </div>
+    <div class="reseña">
+      <h3>Silvio</h3>
+      <p>Gran variedad de productos, ¡no pude resistirme a comprar más de lo que planeaba!</p>
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form action="https://formspree.io/f/mrbgknrj" method="POST">
+      <input type="text" name="name" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <textarea name="message" placeholder="Tu mensaje" rows="4" required></textarea>
+      <!-- Campo oculto para redirigir a una página de agradecimiento (opcional) -->
+      <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+      <!-- Campo para proteger contra bots (opcional) -->
+      <input type="hidden" name="_subject" value="Nuevo mensaje de contacto">
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+</body>
+</html>
